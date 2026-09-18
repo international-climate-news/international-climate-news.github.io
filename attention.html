@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Climate Attention Summary — International Climate News</title>
+<meta name="description" content="How the Climate Attention Index (CAI) is built: data coverage, text-processing pipeline, and the resulting world index.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="brand-mark">ICN</span>
+      <span class="brand-text">
+        <div class="brand-title">International Climate News</div>
+        <div class="brand-sub">Climate attention &middot; currencies &middot; equities &middot; trade</div>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="attention.html" class="active">Climate Attention Summary</a>
+      <a href="results.html">Main Results</a>
+      <a href="download.html">Download</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:24px;">
+  <div class="container">
+    <div class="eyebrow">Data &amp; Methodology</div>
+    <h1 style="font-size:2.1rem;">Climate Attention Summary</h1>
+    <p class="section-intro mt-0" style="margin-top:14px;">
+      Our central measurement object is the <strong>Climate Attention Index (CAI)</strong>: a high-frequency,
+      country-level index of how much attention major news outlets on Twitter/X are paying to climate change,
+      relative to everything else they publish. It is built from text, not sentiment labels &mdash; so it captures
+      <em>how much</em> the news is talking about climate, which we then use as the source of identifying variation
+      throughout the paper.
+    </p>
+  </div>
+</section>
+
+<section class="page-section" style="padding-top:24px;">
+  <div class="container">
+    <div class="eyebrow">Coverage</div>
+    <h2 class="section-title">A global, high-frequency news corpus</h2>
+    <p class="section-intro">
+      We track the Twitter/X feeds of major newspapers across a broad cross-section of developed and emerging
+      economies, in each country's own language, from January 2014 through December 2022.
+    </p>
+
+    <div class="stat-strip">
+      <div class="stat-box">
+        <div class="stat-num">23.3M</div>
+        <div class="stat-label">Tweets analyzed</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">96</div>
+        <div class="stat-label">News outlets tracked</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">25</div>
+        <div class="stat-label">Countries covered</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Languages</div>
+      </div>
+    </div>
+    <p class="section-intro" style="margin-top:14px; font-size:0.85rem;">
+      Sample period: January 2014 &ndash; December 2022. Languages: English, Spanish, Portuguese, French, German,
+      Italian, Arabic, Norwegian and Swedish. Countries span the Americas, Europe, Asia&#8209;Pacific and Africa,
+      including both advanced and developing economies (IMF classification).
+    </p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="eyebrow">Construction</div>
+    <h2 class="section-title">How the index is built</h2>
+    <p class="section-intro">
+      For each country, we turn raw tweets into a comparable, high-frequency attention score in three steps.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Clean and aggregate</h4>
+        <p>Tweets are stripped of links, handles, special characters and stop words, then stemmed. Cleaned text
+        is aggregated into daily (or monthly) "documents" per country.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Score against a climate vocabulary</h4>
+        <p>Each document is converted into tf&#8209;idf term scores and compared, via cosine similarity, to a
+        climate-change vocabulary translated into all 8 sample languages.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Aggregate to a world index</h4>
+        <p>Country-level indices are combined into the <strong>World CAI</strong> &mdash; an equally-weighted
+        average that we use to identify global climate-attention shocks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="eyebrow">The index</div>
+    <h2 class="section-title">The World Climate Attention Index, 2014&ndash;2022</h2>
+    <p class="section-intro">
+      The index rises sharply around major, unambiguously climate-related events &mdash; COP21, the 2019 Strikes
+      for Future, and COP26 &mdash; and falls when attention is crowded out by other major stories, such as the
+      COVID&#8209;19 pandemic and the invasion of Ukraine. Throughout the paper, we use spikes in this index
+      ("top climate-attention days") as the source of identifying variation for currencies, equities and capital
+      flows.
+    </p>
+
+    <div class="figure-block">
+      <img src="assets/img/figures/fig1_world_cai.png" alt="World Climate Attention Index, 2014-2022, with COP21, US elections, Strikes for Future, COVID-19, COP26 and the invasion of Ukraine highlighted">
+      <div class="figure-caption">
+        <div class="fig-tag">Figure 1</div>
+        <p>World Climate Attention Index (CAI). Equally-weighted average across all sample countries. Shaded
+        bands mark major global events. Source: <em>International Climate News</em>, Arteaga&#8209;Garavito,
+        Colacito, Croce &amp; Yang.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section" style="border-bottom:none;">
+  <div class="container">
+    <div class="card" style="background:var(--tint); border-color:var(--tint-border);">
+      <h3 style="margin-bottom:8px;">A note on interpretation</h3>
+      <p style="margin:0; color:var(--ink);">
+        The main identification strategy isolates days of unusually <em>high climate-related attention</em>,
+        not days with a particular kind of climate content. So the results on the
+        <a href="results.html">Main Results</a> page are best read as the response to climate&#8209;attention
+        shocks generally &mdash; the paper's separate decomposition by risk type (physical vs. transition risk)
+        is a distinct exercise reported in the full text.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-note">&copy; International Climate News &middot; Arteaga&#8209;Garavito, Colacito, Croce &amp; Yang</div>
+    <div>
+      <a href="https://github.com/majoarteaga/ClimateAttentionACCY/tree/main">GitHub</a>
+      <a href="assets/paper/International_Climate_News.pdf">Paper</a>
+      <a href="download.html#bibtex">BibTeX</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

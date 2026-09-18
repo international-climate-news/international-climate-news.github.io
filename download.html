@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download — International Climate News</title>
+<meta name="description" content="Download the paper, the Climate Attention Index data, and the BibTeX citation for International Climate News.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="brand-mark">ICN</span>
+      <span class="brand-text">
+        <div class="brand-title">International Climate News</div>
+        <div class="brand-sub">Climate attention &middot; currencies &middot; equities &middot; trade</div>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="attention.html">Climate Attention Summary</a>
+      <a href="results.html">Main Results</a>
+      <a href="download.html" class="active">Download</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:16px;">
+  <div class="container">
+    <div class="eyebrow">Resources</div>
+    <h1 style="font-size:2.1rem;">Download</h1>
+    <p class="section-intro mt-0" style="margin-top:14px;">
+      The current draft, the Climate Attention Index data and replication code, and the citation for this paper.
+    </p>
+  </div>
+</section>
+
+<section class="page-section" style="padding-top:24px;">
+  <div class="container">
+    <div class="download-grid">
+
+      <div class="download-card">
+        <div class="icon">&#128196;</div>
+        <h3>Current Draft</h3>
+        <p>International Climate News &mdash; full paper with model, empirical results and appendix. This draft: September 18, 2026.</p>
+        <div class="btn-row" style="margin-top:0;">
+          <a class="btn solid" href="assets/paper/International_Climate_News.pdf">Download PDF</a>
+        </div>
+      </div>
+
+      <div class="download-card">
+        <div class="icon">&#128193;</div>
+        <h3>Data &amp; Replication Code</h3>
+        <p>Climate Attention Index (country-level and global), and the code used to construct it, hosted on GitHub.</p>
+        <div class="btn-row" style="margin-top:0;">
+          <a class="btn solid" href="https://github.com/majoarteaga/ClimateAttentionACCY/tree/main">Open on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="page-section" id="bibtex">
+  <div class="container">
+    <div class="eyebrow">Citation</div>
+    <h2 class="section-title">BibTeX</h2>
+    <p class="section-intro">If you use this paper or the Climate Attention Index data, please cite the working paper as follows.</p>
+
+    <div class="bibtex-box">
+<button class="copy-btn" data-copy-target="#bibtex-code">Copy</button>
+<code id="bibtex-code">@techreport{ArteagaGaravitoColacitoCroceYang2026,
+  title        = {International Climate News},
+  author       = {Arteaga-Garavito, Maria Jose and Colacito, Riccardo and Croce, Mariano Massimiliano and Yang, Biao},
+  institution  = {Working Paper},
+  year         = {2026},
+  note         = {This draft: September 18, 2026},
+  url          = {https://github.com/majoarteaga/ClimateAttentionACCY}
+}</code>
+    </div>
+  </div>
+</section>
+
+<section class="page-section" style="border-bottom:none;">
+  <div class="container">
+    <div class="eyebrow">Data Coverage</div>
+    <h2 class="section-title">What's in the repository</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>World &amp; country-level CAI</td>
+          <td>Daily and monthly Climate Attention Index series, 2014&ndash;2022, for 25 countries.</td>
+        </tr>
+        <tr>
+          <td>Country exposure estimates (&beta;)</td>
+          <td>Estimated sensitivity of each country's CAI to the global index, used to sort country pairs and firms.</td>
+        </tr>
+        <tr>
+          <td>Construction code</td>
+          <td>Text-preprocessing, tf&#8209;idf scoring and cosine-similarity pipeline used to build the index.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:16px; font-size:0.9rem; color:var(--gray);">
+      See the <a href="https://github.com/majoarteaga/ClimateAttentionACCY/tree/main">repository README</a> for
+      full variable definitions and file structure.
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-note">&copy; International Climate News &middot; Arteaga&#8209;Garavito, Colacito, Croce &amp; Yang</div>
+    <div>
+      <a href="https://github.com/majoarteaga/ClimateAttentionACCY/tree/main">GitHub</a>
+      <a href="assets/paper/International_Climate_News.pdf">Paper</a>
+      <a href="download.html#bibtex">BibTeX</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
