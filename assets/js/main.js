@@ -18,7 +18,7 @@ document.addEventListener("click", function (e) {
   var el = document.getElementById("world-cai");
   if (!el || !window.Plotly) return;
 
-  var INK = "#211d1a", GRAY = "#766e62", GRID = "#ece5d8", LINE = "#c2542d";
+  var INK = "#211d1a", GRAY = "#766e62", GRID = "#ece5d8", LINE = "#1f77b4";   // same blue as the paper's figure
   var BAND = { climate: "rgba(76, 145, 65, 0.28)", other: "rgba(59, 110, 143, 0.24)" };
   var small = window.matchMedia("(max-width: 640px)").matches;
   var AXIS_FONT = small ? 13 : 17;
@@ -35,7 +35,7 @@ document.addEventListener("click", function (e) {
       var traces = [
         {
           x: d.dates, y: d.world, type: "scatter", mode: "lines",
-          line: { color: LINE, width: 2.2 },
+          line: { color: LINE, width: 1.4 },
           name: "World CAI", showlegend: false,
           hovertemplate: "Week of %{x|%b %d, %Y}<br><b>CAI %{y:.3f}</b><extra></extra>"
         },
