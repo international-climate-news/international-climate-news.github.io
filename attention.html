@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/plotly.js-basic-dist-min@2.35.2/plotly-basic.min.js"></script>
 </head>
 <body>
 
@@ -122,11 +123,12 @@
     </p>
 
     <div class="figure-block">
-      <img src="assets/img/figures/fig1_world_cai.png" alt="World Climate Attention Index, 2014-2022, with COP21, US elections, Strikes for Future, COVID-19, COP26 and the invasion of Ukraine highlighted">
+      <div id="world-cai" class="plot" role="img" aria-label="World Climate Attention Index, weekly, October 2014 to December 2022, with COP21, USA elections, Strikes for Future, COVID, COP26 and the invasion of Ukraine highlighted"></div>
+      <p class="plot-hint">Hover for weekly values &middot; drag to zoom &middot; double-click to reset</p>
       <div class="figure-caption">
         <div class="fig-tag">Figure 1</div>
-        <p>World Climate Attention Index (CAI). Equally-weighted average across all sample countries. Shaded
-        bands mark major global events. Source: <em>International Climate News</em>, Arteaga&#8209;Garavito,
+        <p>World Climate Attention Index (CAI), weekly. Equally-weighted average across all sample countries. Shaded
+        bands mark major global events: green for climate events, blue for other global events. Source: <em>International Climate News</em>, Arteaga&#8209;Garavito,
         Colacito, Croce &amp; Yang.</p>
       </div>
     </div>
@@ -159,6 +161,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script defer src="assets/js/main.js"></script>
 </body>
 </html>
